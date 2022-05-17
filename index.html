@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Calculator</h3>
+        <br>
+        <table>
+            <tr>
+                <td><label>Principal : </label></td>
+                <td><input type="number" id="p"></td>
+            </tr>
+
+            <tr>
+                <td><label>Time : </label></td>
+                <td><input type="number" id="t"></td>
+            </tr>
+            <tr>
+                <td><label>Rate : </label></td>
+                <td><input type="number" id="r"></td>
+            </tr>
+        </table>
+        <div class="button">
+            <button onclick="calculate()">Calculate</button>
+        </div>
+
+        <br><br><br>
+        <h3>Result</h3>
+        <div class="result">
+            <p>Compound Interest : <span id="ci"></span></p>
+            <p>Compound Amount : <span id="ca"></span></p>
+            <p>Half Yearly Compound Interest : <span id="hci"></span></p>
+            <p>Half Yearly Compound Amount : <span id="hca"></span></p>
+            <p>Simple Interest : <span id="si"></span></p>
+            <p>CI - SI : <span id="dif"></span></p>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
